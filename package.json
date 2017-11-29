@@ -1,0 +1,13 @@
+{
+  "name": "middag-spaces",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./backup"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "knox": "^0.9.2",
+    "mime": "^2.0.3"
+  }
+}
