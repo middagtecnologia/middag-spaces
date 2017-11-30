@@ -5,6 +5,11 @@ Upload files to Objects Storage, return URL PreSigned and delete file
 
 #### Get Started
 
+Install dependencies   
+```
+npm install
+```
+
 Configure **.env** file to values **EDIT_**:
 
 ```
@@ -29,5 +34,5 @@ node bin/middagspaces README.md projects middag/spaces
 Output
 
 ```
-https://SPACENAME.ams3.digitaloceanspaces.com/middag/spaces/README.md?AWSAccessKeyId=LBSSX7IJVYLSLECOGLP7&Expires=1512013444&Signature=nOIYfAI5CIBp8sKG5pllDzKKHHI%3D
+https://SPACENAME.ams3.digitaloceanspaces.com/projects/middag/spaces/README.md?AWSAccessKeyId=LBSSX7IJVYLSLECOGLP7&Expires=1512013444&Signature=nOIYfAI5CIBp8sKG5pllDzKKHHI%3D
 ```
