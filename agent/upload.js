@@ -5,9 +5,9 @@ const source = args[0]
 const client = args[1]
 const folder = args[2]
 
-if (source === undefined) {
+if (typeof source === undefined) {
   console.log("Informe o arquivo a ser carregado")
-} else if (client === undefined) {
+} else if (typeof client === undefined) {
   console.log("Informe o nome do cliente.")
   process.exit();
 }
