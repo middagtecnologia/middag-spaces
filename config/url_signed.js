@@ -15,6 +15,6 @@ exports.url_signed = file => {
     return s3.getSignedUrl('getObject', {
         Bucket: process.env.MIDDAGSPACE_BUCKET,
         Key: file,
-        Expires: process.env.MIDDAGSPACE_EXPIRESECONDS
+        Expires: parseInt(process.env.MIDDAGSPACE_EXPIRESECONDS)
     })
 }
