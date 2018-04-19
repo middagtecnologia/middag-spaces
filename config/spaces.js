@@ -14,10 +14,10 @@ require('dotenv').config({path: env_filename})
 const knox = require('knox-s3')
 
 const spaces = knox.createClient({
-    key: process.env.KEY,
-    secret: process.env.SECRET,
-    bucket: process.env.BUCKET,
-    endpoint: process.env.ENDPOINT
+    key: process.env.MIDDAGSPACE_KEY,
+    secret: process.env.MIDDAGSPACE_SECRET,
+    bucket: process.env.MIDDAGSPACE_BUCKET,
+    endpoint: process.env.MIDDAGSPACE_ENDPOINT
 });
 
 module.exports = spaces
