@@ -1,6 +1,6 @@
 {
   "name": "middag-spaces",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/middagspaces"
@@ -8,7 +8,7 @@
   "dependencies": {
     "aws-sdk": "^2.160.0",
     "dotenv": "^4.0.0",
-    "knox-s3": "^0.9.3",
+    "knox-s3": "^0.9.5",
     "mime": "1.4.0"
   }
 }
