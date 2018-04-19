@@ -1,7 +1,7 @@
 
 # middag-spaces
 For DigitalOcean Spaces (AWS S3 Compatibility)   
-Upload files to Objects Storage, return URL PreSigned and delete file
+Upload files to Objects Storage and return URL PreSigned
 
 #### Get Started
 
@@ -10,26 +10,26 @@ Install dependencies
 npm install
 ```
 
-Configure **.env** file to values **EDIT_**:
+Create **.middagspace** file in HOME_DIR to values **EDIT_**:
 
 ```
-KEY=EDIT_KEY
-SECRET=EDIT_SECRET
-BUCKET=EDIT_SPACENAME
-ENDPOINT=EDIT_REGION.digitaloceanspaces.com
-EXPIRESECONDS=63072000 # Value to 2 years
+MIDDAGSPACE_KEY=EDIT_KEY
+MIDDAGSPACE_SECRET=EDIT_SECRET
+MIDDAGSPACE_BUCKET=EDIT_SPACENAME
+MIDDAGSPACE_ENDPOINT=EDIT_REGION.digitaloceanspaces.com
+MIDDAGSPACE_EXPIRESECONDS=63072000 # Value to 2 years
 ```
 
 #### How use
 
 ```
-node bin/middagspaces SOURCE MAIN_FOLDER SUBFOLDERS
+node bin/middagspaces SOURCE [PATH]
 ```
 
 #### Example
 
 ```
-node bin/middagspaces README.md projects middag/spaces
+node bin/middagspaces README.md projects/middag/spaces
 ```
 Output
 
