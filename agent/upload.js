@@ -20,7 +20,7 @@ const destination = `/${filename}`
 
 spaces.putFile(source, destination, {
     'Content-Length': fs.statSync(source).size,
-    'Content-Type': mime.lookup(source),
+    'Content-Type': mime.getType(source),
 }, function (err, res) {
     if (err) throw err;
     if (res.statusCode === 200) {
