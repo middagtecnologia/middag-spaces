@@ -2,7 +2,11 @@
 
 const fs = require('fs')
 const os = require('os')
-const env_filename = os.homedir() + '/.middagspace'
+let env_filename = '.middagspace'
+
+if (!fs.existsSync(env_filename)) {
+    env_filename = os.homedir() + '/.middagspace'
+}
 
 if (!fs.existsSync(env_filename)) {
     console.error('File ' + env_filename + ' not exists!')
